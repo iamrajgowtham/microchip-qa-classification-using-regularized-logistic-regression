@@ -19,7 +19,7 @@ The dataset (`ex2data2.txt`) contains 118 historical microchip logs with three c
 ### Feature Mapping to Polynomials
 To capture the circular/elliptical shape of the dataset, the 2 original continuous features are mapped into all polynomial terms up to the $6^{\text{th}}$ degree:
 
-$$\text{map\_feature}(X_1, X_2) = \begin{bmatrix} X_1 & X_2 & X_1^2 & X_1X_2 & X_2^2 & \dots & X_2^6 \end{bmatrix}^T$$
+$$\text{map\_feature}(X_1, X_2) = \begin{bmatrix} X_1 & X_2 & X_1^2 & X_1X_2 & X_2^2 & X_1^3 & \dots & X_1X_2^5 & X_2^6 \end{bmatrix}^T$$
 
 This transforms the 2-dimensional input space into a **28-dimensional feature space**, giving the logistic model the freedom to construct an intricate polynomial contour.
 
